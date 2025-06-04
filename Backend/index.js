@@ -10,7 +10,7 @@ const userRoutes = require('./routes/userRoutes.js');
 connectDB();
 
 app.use(cors({
-    origin: ['http://localhost:5173'],
+    origin: ['http://localhost:5173', 'https://rohitsharma990.github.io/VaultPay'],
   credentials: true
 }));
 

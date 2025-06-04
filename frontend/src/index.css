@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+.light-mode {
+    background-color: #f9fafb;
+    color: #1f2937;
+}
+
+.dark-mode {
+    background-color: #1f2937;
+    color: #f9fafb;
+}
+
+
+/* Safe way to hide video without stopping camera */
+video.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  

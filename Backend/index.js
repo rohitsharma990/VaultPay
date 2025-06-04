@@ -10,7 +10,7 @@ const userRoutes = require('./routes/userRoutes.js');
 connectDB();
 
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://192.168.1.22:5173'],
+    origin: ['http://localhost:5173'],
   credentials: true
 }));
 
@@ -28,13 +28,8 @@ app.use('/api/v1/users', userRoutes);
 
 
 const PORT = process.env.PORT || 8080;
-// app.listen(PORT, () => {
-//   console.log(`Server is running on http://localhost:${PORT}`);
-// });
+app.listen(PORT, () => {
+ console.log(`Server is running on http://localhost:${PORT}`);
+ });
 
 
-const HOST = '192.168.1.22';
-
-app.listen(PORT, HOST, () => {
-  console.log(`Server is running on http://${HOST}:${PORT}`);
-});
